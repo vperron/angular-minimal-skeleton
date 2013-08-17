@@ -1,0 +1,285 @@
+// ----------------------------------------------------------------------------
+// Theme colors
+// ----------------------------------------------------------------------------
+
+.font-blue,       .font-blue-link a         {color: #2d89ef !important;}
+.font-blueLight,  .font-blueLight-link a    {color: #eff4ff !important;}
+.font-blueDark,   .font-blueDark-link a     {color: #2b5797 !important;}
+.font-green,      .font-green-link a        {color: #00a300 !important;}
+.font-greenLight, .font-greenLight-link a   {color: #99b433 !important;}
+.font-greenDark,  .font-greenDark-link a    {color: #1e7145 !important;}
+.font-red,        .font-red-link a          {color: #b91d47 !important;}
+.font-yellow,     .font-yellow-link a       {color: #ffc40d !important;}
+.font-orange,     .font-orange-link a       {color: #e3a21a !important;}
+.font-orangeDark, .font-orangeDark-link a   {color: #da532c !important;}
+.font-pink,       .font-pink-link a         {color: #9f00a7 !important;}
+.font-pinkDark,   .font-pinkDark-link a     {color: #7e3878 !important;}
+.font-purple,     .font-purple-link a       {color: #603cba !important;}
+.font-darken,     .font-darken-link a       {color: #1d1d1d !important;}
+.font-lighten,    .font-lighten-link a      {color: #d5e7ec !important;}
+.font-white,      .font-white-link a        {color: #ffffff !important;}
+.font-grayDark,   .font-grayDark-link a     {color: #525252 !important;}
+
+.bg-blue       {background-color: #2d89ef !important;}
+.bg-blueLight  {background-color: #eff4ff !important;}
+.bg-blueDark   {background-color: #2b5797 !important;}
+.bg-green      {background-color: #00a300 !important;}
+.bg-greenLight {background-color: #99b433 !important;}
+.bg-greenDark  {background-color: #1e7145 !important;}
+.bg-red        {background-color: #b91d47 !important;}
+.bg-yellow     {background-color: #ffc40d !important;}
+.bg-orange     {background-color: #e3a21a !important;}
+.bg-orangeDark {background-color: #da532c !important;}
+.bg-pink       {background-color: #9f00a7 !important;}
+.bg-pinkDark   {background-color: #7e3878 !important;}
+.bg-purple     {background-color: #603cba !important;}
+.bg-darken     {background-color: #1d1d1d !important;}
+.bg-lighten    {background-color: #d5e7ec !important;}
+.bg-white      {background-color: #ffffff !important;}
+.bg-grayDark   {background-color: #525252 !important;}
+
+.bg-customDarkGray        {background-color: #666 !important;}
+.bg-customGray            {background-color: #999 !important;}
+.bg-customLightBlue       {background-color: #b0e5eb !important;}
+.bg-customBlue            {background-color: #00afc4 !important;}
+.bg-customDarkBlue        {background-color: #125961 !important;}
+
+// ----------------------------------------------------------------------------
+// Flat UI
+// ----------------------------------------------------------------------------
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.navbar-inner {
+  background-color: #fafafa; 
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.fakelink {
+  cursor: pointer;
+  color: #3366BB;
+  &:hover {
+    color: #0645AD;
+    text-decoration: underline;
+  }
+}
+
+
+// ----------------------------------------------------------------------------
+// Sticky footer
+// ----------------------------------------------------------------------------
+
+@footerHeight: 40px;
+
+html, body {
+  height: 100%;
+}
+
+.navbar-inner {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -@footerHeight;
+}
+
+.push {
+    height: @footerHeight;
+}
+
+.wrapper > .container {
+  padding-top: 24px;
+}
+
+.footer {
+  background-color: whitesmoke;
+  padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------
+// SPINNING WHEEL
+//-----------------------------------------------------------------------------
+
+.spinningWheel {
+    position:relative;
+    display: inline-block;
+    width:60px;
+    height:60px;
+    -moz-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    -ms-transform:scale(0.6);
+    -o-transform:scale(0.6);
+    transform:scale(0.6);
+}
+
+.f_circleG{
+    position:absolute;
+    background-color:#FFFFFF;
+    height:11px;
+    width:11px;
+    -moz-border-radius:5px !important;
+    -moz-animation-name:f_fadeG;
+    -moz-animation-duration:0.8s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -webkit-border-radius:5px !important;
+    -webkit-animation-name:f_fadeG;
+    -webkit-animation-duration:0.8s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    -ms-border-radius:5px !important;
+    -ms-animation-name:f_fadeG;
+    -ms-animation-duration:0.8s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    -o-border-radius:5px !important;
+    -o-animation-name:f_fadeG;
+    -o-animation-duration:0.8s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    border-radius:5px !important;
+    animation-name:f_fadeG;
+    animation-duration:0.8s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+}
+#frotateG_01{
+    left:0;
+    top:25px;
+    -moz-animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+    -ms-animation-delay:0.3s;
+    -o-animation-delay:0.3s;
+    animation-delay:0.3s;
+}
+#frotateG_02{
+    left:7px;
+    top:7px;
+    -moz-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+    -ms-animation-delay:0.4s;
+    -o-animation-delay:0.4s;
+    animation-delay:0.4s;
+}
+#frotateG_03{
+    left:25px;
+    top:0;
+    -moz-animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+    -ms-animation-delay:0.5s;
+    -o-animation-delay:0.5s;
+    animation-delay:0.5s;
+}
+#frotateG_04{
+    right:7px;
+    top:7px;
+    -moz-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+    -ms-animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    animation-delay:0.6s;
+}
+#frotateG_05{
+    right:0;
+    top:25px;
+    -moz-animation-delay:0.7s;
+    -webkit-animation-delay:0.7s;
+    -ms-animation-delay:0.7s;
+    -o-animation-delay:0.7s;
+    animation-delay:0.7s;
+}
+#frotateG_06{
+    right:7px;
+    bottom:7px;
+    -moz-animation-delay:0.8s;
+    -webkit-animation-delay:0.8s;
+    -ms-animation-delay:0.8s;
+    -o-animation-delay:0.8s;
+    animation-delay:0.8s;
+}
+#frotateG_07{
+    left:25px;
+    bottom:0;
+    -moz-animation-delay:0.9s;
+    -webkit-animation-delay:0.9s;
+    -ms-animation-delay:0.9s;
+    -o-animation-delay:0.9s;
+    animation-delay:0.9s;
+}
+#frotateG_08{
+    left:7px;
+    bottom:7px;
+    -moz-animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -ms-animation-delay:1s;
+    -o-animation-delay:1s;
+    animation-delay:1s;
+}
+@-moz-keyframes f_fadeG{
+    0%{
+        background-color:#000000
+    }
+    100%{
+        background-color:#FFFFFF
+    }
+}
+@-webkit-keyframes f_fadeG{
+    0%{
+        background-color:#000000
+    }
+    100%{
+        background-color:#FFFFFF
+    }
+}
+@-ms-keyframes f_fadeG{
+    0%{
+        background-color:#000000
+    }
+    100%{
+        background-color:#FFFFFF
+    }
+}
+@-o-keyframes f_fadeG{
+    0%{
+        background-color:#000000
+    }
+    100%{
+        background-color:#FFFFFF
+    }
+}
+@keyframes f_fadeG{
+    0%{
+        background-color:#000000
+    }
+    100%{
+        background-color:#FFFFFF
+    }
+}
+
+
+

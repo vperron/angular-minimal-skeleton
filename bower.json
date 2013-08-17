@@ -1,0 +1,21 @@
+{
+  "name": "skeleton",
+  "version": "0.2.0",
+  "main": [],
+  "dependencies": {
+    "console-polyfill": "*",
+    "jquery": "1.8.3",
+    "underscore": "1.4.4",
+    "bootstrap": "2.2.2",
+    "bootstrap-less-themes": "git://github.com/scotch/bootstrap-less-themes.git",
+    "font-awesome": "3.1.1",
+    "angular": "1.2.0rc1",
+    "angular-route": "master",
+    "d3": "3.2.7",
+    "moment": "2.1.0",
+    "moment-timezone": "git://github.com/moment/moment-timezone.git",
+    "momentjs-web-lang": "2.0.0",
+    "angular-local-storage": "5c3f02fb41da07a4528797412b06b1f6f0edf4cf",
+    "tipsy": "https://github.com/ajah/tipsy.git#b9cf0e1c0731d3265cd0cebded44a2af2278f979"
+  }
+}

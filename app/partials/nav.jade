@@ -1,0 +1,9 @@
+ul.nav.pull-right
+  li
+    a(id='account', ng-show="isAuthenticated()", ng-href='/#/account/profile')
+      span
+        .tiny.icon-user
+  li
+    a(id='logout', ng-show="isAuthenticated()", href='#', ng-click="logout()")
+      span
+        .tiny.icon-off
