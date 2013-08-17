@@ -1,20 +1,37 @@
 Minimal-Angular-Skeleton
 =========================
 
+Ridiculously easy-to-use, stable, feature-rich yet minimal AngularJS Skeleton.
 
-No-bullshit, stable, useful and absolutely minimal AngularJS Skeleton.
+### First init ?
 
-## Features
+    npm update
+    ./node_modules/.bin/bower install
 
-### Allover
+### Run develomment server ?
 
+    ./scripts/server.sh
+
+And navigate your browser to `http://localhost:3333`
+
+### Wanna go on production ?
+
+    ./node_modules/.bin/brunch build -o -c config.coffee
+
+You get the generated static website in `_public/` folder.
+
+### Features
+
+#### Allover
+
+* Completeley static and offline, no WWW resources fetched
 * Brunch 1.6.7 compilation and dev server
 * Bower 1.1.2 packagings
 * JADE templates
 * Coffeescript code
 * LESS stylesheets
 
-### Packages:
+#### Packages:
 
 * console-polyfill
 * jQuery 1.8
@@ -27,27 +44,9 @@ No-bullshit, stable, useful and absolutely minimal AngularJS Skeleton.
 * moment-timezone.js
 * tipsy (improved compatibility version)
 
-## First init
+### Directory Layout
 
-    npm update
-    ./node_modules/.bin/bower install
-
-## Run server
-
-    ./scripts/server.sh
-
-And navigate your browser to `http://localhost:3333`
-
-## Generate files for production
-
-    ./node_modules/.bin/brunch build -o -c config.coffee
-
-You get the generated static website in `_public/` folder.
-
-
-## Directory Layout
-
-
+    .
     ├── app
     │   ├── app.coffee
     │   ├── assets
@@ -59,10 +58,11 @@ You get the generated static website in `_public/` folder.
     │   │   │   ├── fontawesome-webfont.ttf
     │   │   │   └── fontawesome-webfont.woff
     │   │   ├── img
-    │   │   │   ├── logo.svg
-    │   │   └── js
-    │   │       ├── html5.js
-    │   │       └── json2.js
+    │   │   │   └── logo.svg
+    │   │   ├── js
+    │   │   │   ├── html5.js
+    │   │   │   └── json2.js
+    │   │   └── partials
     │   ├── controllers.coffee
     │   ├── index.jade
     │   ├── modules
@@ -87,5 +87,5 @@ You get the generated static website in `_public/` folder.
         ├── init.sh
         └── server.sh
 
-    12 directories, 32 files
+    13 directories, 26 files
 
