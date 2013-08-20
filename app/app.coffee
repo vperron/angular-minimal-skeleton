@@ -4,6 +4,7 @@
 App = angular.module('app', [
   'ngRoute'
   'app.modules.view'
+  'partials'
 ])
 
 App.config([
